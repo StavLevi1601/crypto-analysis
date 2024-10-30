@@ -1,4 +1,3 @@
-import styles from "./style.module.scss";
 import { useState } from "react";
 import { Pagination } from "antd";
 import { useQuery } from "react-query";
@@ -29,12 +28,12 @@ export default function TweetList() {
     }
 
     return (
-        <div className={styles.container}>
+        <>
 
             <hr />
 
             {tweetData ? (
-                <div>
+                <>
                     <TweetTable
                         data={tweetData.data.map((tweet, index: number) => ({
                             key: index,
@@ -69,10 +68,10 @@ export default function TweetList() {
                         }
                         style={{ padding: "20px" }}
                     />
-                </div>
+                </>
             ) : (
                 <div>No tweets found</div>
             )}
-        </div>
+        </>
     );
 }
