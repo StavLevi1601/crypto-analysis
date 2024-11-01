@@ -17,7 +17,6 @@ export const fetchTweet = async (pageParam = 1, perPage = 10) => {
 
     const lastTweetDate = sortedByDate[0]?.contentDocument?.createdAt || "Unknown Date";
 
-    // מציאת מספר המטבעות הייחודיים
     const uniqueTokens = new Set(mockJson.map(entry => entry.tokenInfo?.cmc_info?.[0]?.name || "Unknown Token"));
 
     return {
