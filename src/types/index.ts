@@ -33,6 +33,7 @@ export type ContentDocument = {
 };
 
 export type Tweet = {
+    tokenInfo: any;
     contentDocument?: ContentDocument;
     providerDetails?: ProviderDetails;
     data?: {

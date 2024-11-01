@@ -1,0 +1,27 @@
+.totalData {
+    color: white;
+    background-color: #272d2b;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 30px;
+
+    .total {
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        gap: 6px
+    }
+
+    
+    .titleWithIcon {
+        display: flex;
+        gap: 4px;
+        span {
+            color: #448e7b
+        }
+    }
+
+}

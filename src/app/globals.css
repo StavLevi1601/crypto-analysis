@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=museo-sans:wght@400;700&display=swap');
+
 *,
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: white;
   margin: 0 auto;
 }
+
+
+
+html {
+  font-family: 'museo-sans', sans-serif;
+}
+
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
@@ -21,10 +28,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4075ba;
+  background: #f1f1f1;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3565a5;
+  background: gray;
 }
+
+

@@ -1,0 +1,49 @@
+.customModal {
+    .ant-modal-content {
+        background-color: #f9f9f9; /* Light background */
+        color: #333; /* Dark text */
+        padding: 16px;
+    }
+
+    .ant-modal-header {
+        background-color: #e6e6e6;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .ant-modal-title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    .section {
+        margin-bottom: 16px;
+
+        h4 {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+}
+
+.openButton {
+    background-color: transparent;
+    color: #43786a;
+    border-radius: 20px;
+    font-family: 'museo-sans', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 15px;
+    border: 1px solid #43786a;
+    cursor: pointer;
+}

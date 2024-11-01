@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.fullTable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.myContainer :global {
+    .ant-pagination {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+
+    .ant-pagination-item {
+        background-color: #43786a;
+        border: none;
+        border-radius: 50%; 
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px; 
+        color: white; 
+        transition: #43786a 0.3s ease; 
+    }
+
+    .ant-pagination-item:hover {
+        background-color: #355d53;
+    }
+
+    .ant-pagination-item-active {
+        background-color: #2a4c44;
+        color: white;
+    }
+
+    .ant-pagination-item-active a {
+        color: white;
+        font-weight: bold; 
+    }
+
+    .ant-pagination-item-link {
+        color: white; 
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+
+    }
+
+    .ant-pagination-item-link:hover {
+        color: white; 
+        background-color: #355d53;
+    }
+
+    .ant-pagination-total-text {
+        color: white;
+        font-size: 14px;
+    }
+
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+        color: white; 
+    }
+
+
+}

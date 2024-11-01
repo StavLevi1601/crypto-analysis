@@ -1,0 +1,63 @@
+@use "../../style/colors.module.scss" as *;
+
+.antdTable :global(.ant-table) {
+    background-color: transparent; 
+    color: #e0e0e0; 
+    border: 1px solid #29312f; 
+    border-bottom: 1px solid #29312f; 
+    font-family: 'museo-sans', sans-serif;
+    size: 20px;
+    font-weight: 700;
+
+    
+}
+
+.antdTable :global(.ant-table-thead ) { 
+    border: none !important;
+    white-space: nowrap;
+}
+
+
+.antdTable :global(.ant-table-thead > tr > th) {
+    background-color: transparent;
+    white-space: nowrap;
+    border: none !important; 
+    font-family: 'museo-sans', sans-serif;
+
+}
+
+
+.antdTable :global(.ant-table-thead > tr > th) {
+    background-color: transparent;
+    color: #a5a5a5;
+    font-size: 17px;
+    white-space: nowrap;
+    border: none !important;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent; 
+    font-family: 'museo-sans', sans-serif;
+    size: 20px;
+
+
+
+}
+
+.antdTable :global(.ant-table-tbody > tr > td) {
+    background-color: transparent;
+    color: #e0e0e0;
+    font-size: 15px;
+    font-family: 'museo-sans', sans-serif;
+    border: none;
+    font-weight: 300;
+
+}
+
+.antdTable :global(.ant-table-thead > tr > td),
+.antdTable :global(.ant-table-tbody > tr:hover td) {
+    background-color: #2e3a35 !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid transparent; 
+    border-top: 1px solid transparent; 
+
+}
+
