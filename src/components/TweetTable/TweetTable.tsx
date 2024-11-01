@@ -54,6 +54,7 @@ const TweetTable: React.FC<TweetTableProps> = ({ data }) => {
                 dataSource={data}
                 columns={columns}
                 pagination={false}
+                locale={{ emptyText: <div className={style.noDataMessage}>No tweets found</div> }}
             />
         </div>
     );

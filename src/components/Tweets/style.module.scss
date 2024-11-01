@@ -11,6 +11,14 @@
     gap: 20px;
 }
 
+
+.noDataMessage {
+    text-align: center;
+    color: #e0e0e0;
+    background-color: transparent; 
+    padding: 20px;
+}
+
 .myContainer :global {
     .ant-pagination {
         background-color: transparent;

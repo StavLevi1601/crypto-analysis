@@ -107,7 +107,7 @@ export default function TweetList() {
 
                 </div>
             ) : (
-                <div>No tweets found</div>
+                <div className={style.noDataMessage}>No tweets found</div>
             )}
         </div>
     );

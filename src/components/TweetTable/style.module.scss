@@ -61,3 +61,28 @@
 
 }
 
+
+.antdTable :global(.ant-table-cell::before) {
+    border  : none !important; 
+}
+
+.antdTable :global(.ant-table-placeholder) {
+    background-color: transparent !important; 
+    color: #e0e0e0 !important; 
+}
+
+.noDataMessage {
+    text-align: center;
+    color: #e0e0e0;
+    background-color: transparent; 
+    padding: 20px;
+    font-family: 'museo-sans', sans-serif;
+    font-size: 18px; 
+    font-family: 'museo-sans', sans-serif;
+}
+
+.antdTable :global(.ant-table) {
+    font-family: 'Verdana', sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+}
