@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { Pagination } from "antd";
 import { useQuery } from "react-query";
-import { fetchTweet } from "@/app/utils/fetch";
 import TweetTable from "../TweetTable/TweetTable";
 import style from "./style.module.scss"
 import TotalData from "../TotalData/TotalData";
 import Search from "../Search/Search";
 import { Tweet } from "@/types";
+import { fetchTweet } from "@/utils/fetch";
 
 export default function TweetList() {
+
     const [currentPage, setCurrentPage] = useState(1);
     const [filterData, setFilterData] = useState<Tweet[]>([]);
     const [searchTerm, setSearchTerm] = useState<string>("");
@@ -17,6 +18,7 @@ export default function TweetList() {
         data: tweetData,
         isLoading: isLoadingTweets,
         refetch,
+        error,
     } = useQuery({
         queryFn: () => fetchTweet(currentPage),
         queryKey: ["tweets", currentPage],
@@ -37,9 +39,6 @@ export default function TweetList() {
         }
     };
 
-    if (isLoadingTweets) {
-        return <div>Loading...</div>;
-    }
 
     const handleSearch = (value: string) => {
         setSearchTerm(value);
@@ -61,7 +60,19 @@ export default function TweetList() {
         }
     };
 
+    if (isLoadingTweets) {
+        return <div>Loading...</div>;
+    }
 
+    if (error) {
+        return (
+            <div className={style.errorContainer}>
+                <h3>Error loading tweets</h3>
+                <p>{error instanceof Error ? error.message : 'An unknown error occurred'}</p>
+                <button onClick={() => refetch()}>Try Again</button>
+            </div>
+        );
+    }
 
     return (
         <div className={style.container}>

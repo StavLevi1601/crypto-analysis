@@ -85,3 +85,48 @@
 
 
 }
+
+.errorContainer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+    
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      background-color: #355d53;
+      color: white;
+      border: none;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #355d53;
+      }
+    }
+  }
+  
+  .loadingContainer {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .errorMessage {
+    text-align: center;
+    color: #355d53;
+    padding: 1rem;
+    
+    button {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  .noDataMessage {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+  }
