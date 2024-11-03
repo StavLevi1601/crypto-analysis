@@ -50,9 +50,7 @@ export default function TweetList() {
                     (typeof tweet.contentDocument?.description === 'string' &&
                         tweet.contentDocument.description.toLowerCase().includes(value.toLowerCase())) ||
                     (typeof tweet.providerDetails?.screen_name === 'string' &&
-                        tweet.providerDetails.screen_name.toLowerCase().includes(value.toLowerCase())) ||
-                    (typeof tweet.contentDocument?.createdAt === 'string' &&
-                        tweet.contentDocument.createdAt.toLowerCase().includes(value.toLowerCase()))
+                        tweet.providerDetails.screen_name.toLowerCase().includes(value.toLowerCase()))
                 );
             });
 
