@@ -1,3 +1,5 @@
+@use "../../style/colors.module.scss" as *;
+
 .container {
     display: flex;
     flex-direction: column;
@@ -14,7 +16,7 @@
 
 .noDataMessage {
     text-align: center;
-    color: #e0e0e0;
+    color: $dark-white;
     background-color: transparent; 
     padding: 20px;
 }
@@ -28,7 +30,7 @@
     }
 
     .ant-pagination-item {
-        background-color: #43786a;
+        background-color: $dark-green;
         border: none;
         border-radius: 50%; 
         width: 40px;
@@ -37,26 +39,26 @@
         justify-content: center;
         align-items: center;
         margin: 0 5px; 
-        color: white; 
-        transition: #43786a 0.3s ease; 
+        color: $white; 
+        transition: $dark-green 0.3s ease; 
     }
 
     .ant-pagination-item:hover {
-        background-color: #355d53;
+        background-color: $dark-green;
     }
 
     .ant-pagination-item-active {
-        background-color: #2a4c44;
-        color: white;
+        background-color: $dark-green;
+        color: $white; 
     }
 
     .ant-pagination-item-active a {
-        color: white;
-        font-weight: bold; 
+      color: $white; 
+      font-weight: bold; 
     }
 
     .ant-pagination-item-link {
-        color: white; 
+        color: $white; 
         border: none;
         background-color: transparent;
         display: flex;
@@ -69,18 +71,18 @@
     }
 
     .ant-pagination-item-link:hover {
-        color: white; 
-        background-color: #355d53;
+        color: $white; 
+        background-color: $dark-green;
     }
 
     .ant-pagination-total-text {
-        color: white;
+        color: $white;
         font-size: 14px;
     }
 
     .ant-pagination-prev .ant-pagination-item-link,
     .ant-pagination-next .ant-pagination-item-link {
-        color: white; 
+        color: $white; 
     }
 
 
@@ -89,7 +91,7 @@
 .errorContainer {
     text-align: center;
     padding: 2rem;
-    color: white;
+    color: $white;
 
     h3 {
       margin-bottom: 1rem;
@@ -99,13 +101,13 @@
       margin-top: 1rem;
       padding: 0.5rem 1rem;
       border-radius: 4px;
-      background-color: #355d53;
-      color: white;
+      background-color: $dark-green;
+      color: $white;
       border: none;
       cursor: pointer;
       
       &:hover {
-        background-color: #355d53;
+        background-color: $dark-green;
       }
     }
   }
@@ -117,7 +119,7 @@
   
   .errorMessage {
     text-align: center;
-    color: #355d53;
+    color: $dark-green;
     padding: 1rem;
     
     button {
@@ -128,5 +130,5 @@
   .noDataMessage {
     text-align: center;
     padding: 1rem;
-    color: #666;
+    color: $dark-text;
   }

@@ -1,6 +1,8 @@
+@use '../../style/colors.module.scss' as *;
+
 .columnHeader {
     display: flex;
     .iconDetails {
-        color: #448e7b; 
+        color: $dark-green; 
     }
 }

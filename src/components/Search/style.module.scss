@@ -1,3 +1,5 @@
+@use "../../style/colors.module.scss" as *;
+
 .searchLine {
     position: relative;
 }
@@ -16,15 +18,15 @@
         font-weight: 100;
         font-style: normal;
         font-family: 'museo-sans', sans-serif;
-        color: white
+        color: $background-light
     }
     
 }
 
 .searchIcon {
     position: absolute;
-    left: 10px; /* Adjust to move the icon horizontally */
-    color: #a5a5a5; /* Adjust the color as needed */
-    font-size: 18px; /* Adjust the size as needed */
+    left: 10px;
+    color: $light-gray; 
+    font-size: 18px; 
 }
 

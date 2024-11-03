@@ -1,13 +1,15 @@
+@use '../../style/colors.module.scss' as *;
+
 .customModal {
     .ant-modal-content {
-        background-color: #f9f9f9; /* Light background */
-        color: #333; /* Dark text */
+        background-color: $background-light;
+        color: $dark-text; /* Dark text */
         padding: 16px;
     }
 
     .ant-modal-header {
-        background-color: #e6e6e6;
-        border-bottom: 1px solid #dcdcdc;
+        background-color: $background-light;
+        border-bottom: 1px solid $background-light;
     }
 
     .ant-modal-title {
@@ -20,7 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    color: white;
+    color: $background-light;
     .section {
         margin-bottom: 16px;
 
@@ -38,12 +40,11 @@
 
 .openButton {
     background-color: transparent;
-    color: #43786a;
+    color: $dark-green;
     border-radius: 20px;
-    font-family: 'museo-sans', sans-serif;
     font-weight: 600;
     white-space: nowrap;
     padding: 15px;
-    border: 1px solid #43786a;
+    border: 1px solid $dark-green;
     cursor: pointer;
 }

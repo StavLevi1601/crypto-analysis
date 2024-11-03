@@ -1,6 +1,8 @@
+@use "../../style/colors.module.scss" as *;
+
 .totalData {
-    color: white;
-    background-color: #272d2b;
+    color:$white;
+    background-color: $background-green-black;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -20,7 +22,7 @@
         display: flex;
         gap: 4px;
         span {
-            color: #448e7b
+            color: $dark-green
         }
     }
 
