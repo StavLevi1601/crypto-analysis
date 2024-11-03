@@ -17,7 +17,7 @@ const Search: React.FC<SearchProps> = ({ onSearchValue }) => {
             <div className={style.inputWrapper}>
                 <AiOutlineSearch className={style.searchIcon} />
                 <input
-                    placeholder='Search by: Token name, Tweet, Username'
+                    placeholder='Search by: Token name, Tweet Date, Tweet, Username'
                     onChange={(e) => handleSearch(e.target.value)}
                 />
             </div>
