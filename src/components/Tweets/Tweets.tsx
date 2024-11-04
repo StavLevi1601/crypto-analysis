@@ -42,23 +42,15 @@ export default function TweetList() {
 
     const handleSearch = (value: string) => {
         setSearchTerm(value);
-
         if (!tweetData?.data) return;
-
         if (tweetData) {
-
             const filtered = tweetData.data.filter((tweet: Tweet) => {
-
                 if (tweet.contentDocument?.createdAt) {
-
                     const tweetDate = new Date(tweet.contentDocument.createdAt).toLocaleDateString();
-
                     if (tweetDate.includes(value)) {
-
                         return true;
                     }
                 }
-
                 return (
                     (typeof tweet.tokenInfo?.cmc_info?.[0]?.name === 'string' &&
                         tweet.tokenInfo.cmc_info[0].name.toLowerCase().includes(value.toLowerCase())) ||
@@ -74,6 +66,7 @@ export default function TweetList() {
             setFilterData(filtered);
         }
     };
+
 
     if (isLoadingTweets) {
         return <div>Loading...</div>;

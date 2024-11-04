@@ -1,12 +1,12 @@
 'use client'
 
 import Header from '@/components/Header/Header';
-import TotalData from '@/components/TotalData/TotalData';
 import Tweets from '@/components/Tweets/Tweets'
 import React from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
 const queryClient = new QueryClient();
+
 
 
 export default function Home() {
